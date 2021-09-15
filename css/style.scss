@@ -1,0 +1,187 @@
+.navColor
+{
+   background-image: url("../img/Clip.png");
+   background-repeat: no-repeat;
+   background-color: rgb(12, 88, 72) ;
+   background-position: 20%;
+   overflow: hidden;
+}
+
+
+ @mixin form($prop1,$prop2){  
+    position: absolute;
+    color: #aaa;
+    left: $prop1;
+    padding-top: $prop2;
+    overflow: hidden;
+    
+}
+.form{
+    @include  form(10px,13px)
+}
+.form2{
+    @include  form(30px,13px)
+}
+
+
+@mixin social-icons($prop1){
+  background: $prop1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.social-icons{
+  @include social-icons(rgb(12, 88, 72))
+}
+
+.bg-sahi{
+  margin-top: 10%;
+  overflow: hidden;
+}
+@mixin boundry($prop1,$prop2){
+  background-color:$prop1;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 20%;
+  position: absolute;
+  top: $prop2;
+  margin-right: 30%;
+  overflow: hidden;
+  
+
+}
+.boundry1{
+  @include boundry( rgb(12, 88, 72), 0)
+}
+.sahi-tag{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+  width: 30vw;
+}
+.dwnbtn{
+  position: absolute;
+  background-color: rgb(12, 88, 72);
+  top: 0;
+  z-index: 3;
+  border-radius: 5px; 
+}
+.btm-ln{
+    border-top: 4px solid gold;
+    height: 8px;
+    width: 15%;
+    overflow: hidden;
+}
+#imageBack
+{
+  background-image: url('../img/Layer5.png');
+  background-position:bottom ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+@mixin badge($prop3){
+
+  background-color: $prop3;
+  color: gold;
+  
+}
+
+.badge{
+  @include  badge( rgb(12, 88, 72) )
+}
+
+.footer{
+    background-color: #35353b;
+    color: white;
+}
+.f_links > a{
+
+  list-style: none !important;
+  color: white;
+  &:hover{
+
+    list-style: none !important;
+    color: whitesmoke;
+  }
+}
+
+.footer_1{
+
+  background-color: rgb(12, 88, 72);
+  overflow: hidden;
+}
+.social-icons1{
+
+  @include social-icons(white);
+}
+
+/* About Us page Styles */
+
+.alrasia{
+
+  background-color: #fbeaae;
+  width: 100%;
+  height: auto;
+  text-decoration: none !important;
+  color: black;
+  overflow: hidden;
+}
+
+.alrasia > a{
+
+  text-decoration: none;
+}
+
+/* New-books Page */
+
+.tag{
+  position: absolute;
+  z-index: 1000;
+  font-weight: bold;
+  color: gold;
+  background-color:  rgb(12, 88, 72);
+  padding: 5px 15px 5px 15px;
+  top: 0;
+  margin-right: -25px;
+  overflow: visible;
+  flex-wrap: wrap;
+
+}
+@mixin wrapper($prop1){
+
+  width: $prop1;
+}
+
+.wrapper1{
+
+  @include wrapper(200px);
+}
+#fa-bars{
+  background-color: gold;
+  color: honeydew;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  margin-right: 10px;
+}
+.extend-tag{
+
+  color: gold;
+  font-size: x-large;
+  list-style: none !important;
+}
+.fa-icons{
+
+  padding-top: 12px;
+  padding-left: 13px;
+  color: gold;
+}
+
+.car{
+  z-index: 1000;
+  top: 0;
+  margin-right: 150px;
+  margin-top: 230px;
+}

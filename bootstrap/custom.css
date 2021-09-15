@@ -1,0 +1,95 @@
+
+li
+{
+    padding-right: 20px;
+    font-family: sans-serif;
+    
+}
+li > a 
+{
+    color: black;
+}
+li > a:hover
+{
+    color: orange;
+  
+}
+.active
+{
+    color: orange;
+}
+#top_btn > button
+{
+    background: transparent;    
+    outline: 1px solid white;
+    color: white;
+    
+}
+#top_btn > button:hover
+{
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+}
+.mid_btn > button
+{
+    background:transparent;
+    color: black;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+.mid_btn > button:hover
+{
+    background: black;
+    color: white;
+    border-radius: 0px;
+}
+.navbar
+{
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+input[type=text]
+{
+    background-color: transparent;
+    border:3px solid white
+}
+
+input[type=text]:focus
+{
+    background: transparent;
+}
+
+#sub > button
+{
+   
+    border: 3px solid white !important;
+    background: transparent !important;
+}
+
+.mid_btn2 > button
+{
+    background:transparent ;
+    color: black;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+
+.mid_btn2 > button:hover
+{
+    background: black;
+    color: white;
+    border-radius: 0px;
+}
+
+.carousel-indicators > li
+{
+    background-color: orange;
+    
+}
+.carousel-indicators
+{
+    position: relative;
+    
+}
